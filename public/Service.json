@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Account access issue",
+    "description": "User is unable to log in to their account and keeps getting an 'invalid credentials' error.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Billing inquiry",
+    "description": "Customer was charged incorrectly for their last subscription renewal.",
+    "customer": "Jane Smith",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-24T10:15:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Product feature request",
+    "description": "Customer wants to request a new feature for the product dashboard.",
+    "customer": "Peter Jones",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-24T10:30:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Technical support for API",
+    "description": "Developer is having trouble integrating with the public API and needs technical assistance.",
+    "customer": "Michael Brown",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T11:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Website loading slow",
+    "description": "User reports that the website is taking a long time to load pages.",
+    "customer": "Sarah Wilson",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-24T11:45:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Feedback on new design",
+    "description": "Customer wants to provide feedback on the recently launched website design.",
+    "customer": "David Evans",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-24T12:00:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Password reset link not working",
+    "description": "Customer did not receive the password reset email after multiple attempts.",
+    "customer": "Emily Davis",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T12:30:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Incorrect order details",
+    "description": "Customer's recent order shows incorrect shipping address and needs correction.",
+    "customer": "Chris Taylor",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-24T13:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "General inquiry about services",
+    "description": "Prospective client has questions about pricing and different service tiers.",
+    "customer": "Laura Miller",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-24T13:45:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Payment gateway error",
+    "description": "Customer is getting an error when trying to complete a payment.",
+    "customer": "James Anderson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T14:00:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Mobile app crash report",
+    "description": "User reports that the mobile app crashes every time they try to open a specific page.",
+    "customer": "Olivia Martinez",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T14:30:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Subscription cancellation query",
+    "description": "Customer wants to know the steps to cancel their subscription and get a refund.",
+    "customer": "Daniel Lee",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-24T15:00:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Documentation clarification",
+    "description": "Developer needs clarification on a specific section of the API documentation.",
+    "customer": "Sophia Thomas",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-24T15:45:00Z"
+  },
+  {
+    "id": 14,
+    "title": "New user onboarding assistance",
+    "description": "New user is having trouble with the onboarding process and needs guidance.",
+    "customer": "Liam Jackson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-24T16:00:00Z"
+  }
+]
