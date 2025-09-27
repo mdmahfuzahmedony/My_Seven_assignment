@@ -62,7 +62,7 @@ const Main_part = ({ customerSupports, setCount, setComplateCount,setCustomerSup
                 completeBtn();
                 setComplateCount((prev) => prev + 1);
                 setCount((prev) => prev - 1);
-
+                  setSelectedTitle((prev) => prev.filter((title) => title !== item));
                 setCustomerSupport((prev) =>
                     prev.filter((support) => support.title !== item)
                   );
