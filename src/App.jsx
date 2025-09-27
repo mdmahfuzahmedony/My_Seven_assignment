@@ -30,6 +30,7 @@ function App() {
       ></Main_part>
       <Footer></Footer>
     </>
+    
   );
 }
 

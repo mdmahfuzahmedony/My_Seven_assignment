@@ -6,9 +6,11 @@ import orangeImg from "../assets/Ellipse2.png";
 import vector4 from "../assets/vector4.png";
 
 const Customer_Support = ({ support_Card, setCount }) => {
+
   const handleClick = () => {
     toast.success(`In Progress!`);
   };
+
 
   return (
     <div>
@@ -66,7 +68,7 @@ const Customer_Support = ({ support_Card, setCount }) => {
         </div>
       </div>
 
-      <ToastContainer></ToastContainer>
+      {/* <ToastContainer></ToastContainer> */}
     </div>
   );
 };

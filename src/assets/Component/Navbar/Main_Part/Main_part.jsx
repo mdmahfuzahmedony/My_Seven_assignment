@@ -3,9 +3,7 @@ import Customer_Support from "../../../../Customer_Support/Customer_Support";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
-const completeBtn = () => {
-  toast.success("Complete");
-};
+
 
 const Main_part = ({
   customerSupports,
@@ -15,6 +13,10 @@ const Main_part = ({
 }) => {
   const [selectedTitle, setSelectedTitle] = useState([]);
   const [resolved, setResolved] = useState([]);
+
+  const completeBtn = () => {
+  return toast.success("Complete");
+};
 
   return (
     <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row justify-between gap-5 w-full">
@@ -59,10 +61,10 @@ const Main_part = ({
               <p className="text-black text-[20px] font-semibold pb-1">
                 {item}
               </p>
-
+             
               <button
                 onClick={() => {
-                  completeBtn();
+                  completeBtn()                
                   setComplateCount((prev) => prev + 1);
                   setCount((prev) => prev - 1);
                   setSelectedTitle((prev) =>
@@ -98,7 +100,7 @@ const Main_part = ({
               <div className="flex justify-between items-center">
                 <p className="text-black">
                   {" "}
-                  <i class="fa-solid fa-check"></i> Complete
+                  <i className="fa-solid fa-check"></i> Complete
                 </p>
                 <button
                   className="text-red-500"
@@ -113,9 +115,7 @@ const Main_part = ({
           ))
         )}
       </div>
-
-      {/* Toast container শুধু একবার */}
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </div>
   );
 };
