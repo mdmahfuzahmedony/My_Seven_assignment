@@ -1,6 +1,10 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
+import greenImg from "../assets/Ellipse.png";
+import orangeImg from "../assets/Ellipse2.png";
+import vector4 from "../assets/vector4.png";
+
 const Customer_Support = ({ support_Card, setCount }) => {
   const handleClick = () => {
     toast.success(`In Progress!`);
@@ -21,18 +25,14 @@ const Customer_Support = ({ support_Card, setCount }) => {
             {support_Card.title}
           </h2>
           <div
-            className={` py-1.5 px-5 rounded-full text-[18px] font-semibold flex gap-2 justify-between items-center ${
-              support_Card.status === "Open"
-                ? "bg-green-400 /B12A7-Customer-Support-Zone/Ellipse.png"
-                : "bg-orange-200 /B12A7-Customer-Support-Zone/Ellipse2.png"
+            className={`py-1.5 px-5 rounded-full text-[18px] font-semibold flex gap-2 justify-between items-center ${
+              support_Card.status === "Open" ? "bg-green-400" : "bg-amber-100"
             }`}
           >
             <img
-              src={
-                support_Card.status === "Open"
-                  ? "/B12A7-Customer-Support-Zone/Ellipse.png"
-                  : "/B12A7-Customer-Support-Zone/Ellipse2.png"
-              }
+              src={support_Card.status === "Open" ? greenImg : orangeImg}
+              alt={support_Card.status}
+              className="w-5 h-5"
             />
             <p className="text-black">{support_Card.status}</p>
           </div>
@@ -59,12 +59,13 @@ const Customer_Support = ({ support_Card, setCount }) => {
           <div className="flex justify-between items-center gap-2">
             <p className="text-[14px] text-black ">{support_Card.customer}</p>
             <div className="flex justify-center items-center gap-2">
-              <img src="/B12A7-Customer-Support-Zone/Vector4.png" alt="" />
+              <img src={vector4} alt="" />
               <p className="text-black">{support_Card.createdAt}</p>
             </div>
           </div>
         </div>
       </div>
+
       <ToastContainer></ToastContainer>
     </div>
   );

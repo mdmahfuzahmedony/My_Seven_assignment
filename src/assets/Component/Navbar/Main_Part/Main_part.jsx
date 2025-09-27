@@ -3,6 +3,7 @@ import Customer_Support from "../../../../Customer_Support/Customer_Support";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
+
 const completeBtn = () => {
   toast.success("Complete");
 };
@@ -61,7 +62,7 @@ const Main_part = ({ customerSupports, setCount, setComplateCount,setCustomerSup
                 completeBtn();
                 setComplateCount((prev) => prev + 1);
                 setCount((prev) => prev - 1);
-                
+
                 setCustomerSupport((prev) =>
                     prev.filter((support) => support.title !== item)
                   );
