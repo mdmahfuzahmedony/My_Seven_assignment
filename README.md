@@ -1,16 +1,16 @@
-# React + Vite
+What is JSX, and why is it used?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##@ JSX is a JavaScript syntax extension that enables you to have HTML-like syntax in JavaScript. JSX renders React code readable and writable by combining UI structure and logic into one. JSX is not natively supported by browsers, so it gets converted into regular JavaScript first before running.
 
-Currently, two official plugins are available:
+What is the difference between State and Props?
+##@ In React, **state** is internal component data and can change over time, usually with `useState`. **Props** are external inputs passed from parent to child components. State is local and can change, but props are immutable, enabling components to communicate and be reusable across an app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+What is the useState hook, and how does it work?
+##@ useState is a React Hook that enables functional components to maintain and update values. It returns a state variable and a setter function. React re-renders the component when the setter updates the state with the new value. It's essential to dynamic, interactive data in React apps.
 
-## React Compiler
+How can you share state between components in React?
+##@ In React, you can achieve sharing of state between components by lifting state up to a common parent and then passing it down as props. This way, both child components have access to the same data. Otherwise, for larger applications, you can use React Context API or third-party state management libraries like Redux or Zustand, which provide centralized state, so sharing and managing data across several components in a consistent manner is a breeze.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How is event handling done in React?
+##@ Handling events in React is done through camelCase property names, like onClick or onChange, instead of their lowercase HTML counterparts. You pass in a function as the event handler, not a string. React events are processed within SyntheticEvent in order to make them cross-browser compatible so that they're uniform and better performing across the environment.
