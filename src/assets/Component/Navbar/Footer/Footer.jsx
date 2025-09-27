@@ -1,8 +1,8 @@
 import React from "react";
-import Group1 from "../../../../assets/Group1.png"
-import Group2 from "../../../../assets/Group2.png"
-import Group3 from "../../../../assets/Group3.png"
-import Group4 from "../../../../assets/Group4.png"
+import Group1 from "../../../../assets/Group1.png";
+import Group2 from "../../../../assets/Group2.png";
+import Group3 from "../../../../assets/Group3.png";
+import Group4 from "../../../../assets/Group4.png";
 
 const Footer = () => {
   return (
@@ -21,13 +21,12 @@ const Footer = () => {
         <div className="flex-1 flex justify-center  ">
           <div>
             <h2 className="font-semibold text-[20px]">Company</h2>
-            
-              <ul className="mt-5">
-                <li className="pt-1.5">About us</li>
-                <li className="pt-1.5">Our Mission</li>
-                <li className="pt-1.5">Contact Saied</li>
-              </ul>
-            
+
+            <ul className="mt-5">
+              <li className="pt-1.5">About us</li>
+              <li className="pt-1.5">Our Mission</li>
+              <li className="pt-1.5">Contact Saied</li>
+            </ul>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
@@ -55,12 +54,23 @@ const Footer = () => {
           <div>
             <h2 className="font-semibold text-[20px]">Social Links</h2>
             <ul className="mt-5">
-              <li className="pt-2 flex gap-1"> <img src={Group1} alt="" />
+              <li className="pt-2 flex gap-1">
+                {" "}
+                <img src={Group1} alt="" />
                 @CS — Ticket System
               </li>
-              <li className="pt-2 flex gap-1"><img src={Group2} alt="" />@CS — Ticket System</li>
-              <li className="pt-2 flex gap-1"><img src={Group3} alt="" />@CS — Ticket System</li>
-              <li className="pt-2 flex gap-1"><img src={Group4} alt="" />support@cst.com</li>
+              <li className="pt-2 flex gap-1">
+                <img src={Group2} alt="" />
+                @CS — Ticket System
+              </li>
+              <li className="pt-2 flex gap-1">
+                <img src={Group3} alt="" />
+                @CS — Ticket System
+              </li>
+              <li className="pt-2 flex gap-1">
+                <img src={Group4} alt="" />
+                support@cst.com
+              </li>
             </ul>
           </div>
         </div>
